@@ -3,8 +3,8 @@
 @section('content')
 	<div class="col-sm-8">
 		<h2>
-			Nuevo producto
-			<a href="{{ route('products.index') }}" class="btn btn-default pull-right">Listado</a>
+			Add Product
+			<a href="{{ route('products.index') }}" class="btn btn-default pull-right">Back</a>
 		</h2>
 
 		@include('products.fragment.error')

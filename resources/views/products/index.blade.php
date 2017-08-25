@@ -3,8 +3,8 @@
 @section('content')
 	<div class="col-sm-8">
 		<h2>
-			Listado de productos
-			<a href="{{ route('products.create') }}" class="btn btn-primary pull-right">Nuevo</a>
+			Products
+			<a href="{{ route('products.create') }}" class="btn btn-primary pull-right">Add</a>
 		</h2>
 		@include('products.fragment.info')
 		<table class="table table-hover table-striped">

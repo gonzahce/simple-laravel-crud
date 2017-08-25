@@ -11,5 +11,5 @@
 	{!! Form::text('body', null, ['class' => 'form-control']) !!}
 </div>
 <div class="form-group">
-	{!! Form::submit('ENVIAR', ['class' => 'btn btn-primary']) !!}
+	{!! Form::submit('Send', ['class' => 'btn btn-primary']) !!}
 </div>
