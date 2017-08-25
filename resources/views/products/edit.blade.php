@@ -4,7 +4,7 @@
 	<div class="col-sm-8">
 		<h2>
 			Editar producto
-			<a href="{{ route('products.index') }}" class="btn btn-default pull-right">Listado</a>
+			<a href="{{ route('products.index') }}" class="btn btn-default pull-right">Back</a>
 		</h2>
 		@include('products.fragment.error')
 		{!! Form::model($product, ['route' => ['products.update', $product->id], 'method' => 'PUT']) !!}

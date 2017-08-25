@@ -20,20 +20,18 @@
 				<tr>
 					<td>{{ $product->id }}</td>
 					<td>
-						<strong>{{ $product->name }}</strong><br>
+						<a href="{{ route('products.show', $product->id) }}"><strong>{{ $product->name }}</strong></a><br>
 						{{$product->short}}
 					</td>
+					
 					<td>
-						<a href="{{ route('products.show', $product->id) }}" class="btn btn-link">ver</a>
-					</td>
-					<td>
-						<a href="{{ route('products.edit', $product->id) }}" class="btn btn-link">editar</a>
+						<a href="{{ route('products.edit', $product->id) }}" class="btn btn-link">Edit</a>
 					</td>
 					<td>
 						<form action="{{ route('products.destroy', $product->id) }}" method="POST">
 							{{ csrf_field() }}
 							<input type="hidden" name="_method" value="DELETE">
-							<button class="btn btn-link">borrar</button>
+							<button class="btn btn-link">Delete</button>
 						</form>
 					</td>
 				</tr>

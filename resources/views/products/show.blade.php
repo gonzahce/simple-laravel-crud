@@ -4,7 +4,8 @@
 	<div class="col-sm-8">
 		<h2>
 			{{ $product->name }}
-			<a href="{{ route('products.edit', $product->id) }}" class="btn btn-default pull-right">editar</a>
+			<a href="{{ route('products.edit', $product->id) }}" class="btn btn-default pull-right">Edit</a>
+			<a href="{{ route('products.index') }}" class="btn btn-default pull-right">Back</a>
 		</h2>
 		<p>
 			{{ $product->short }}
